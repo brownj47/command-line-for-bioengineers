@@ -16,29 +16,13 @@ pwd
 ## Why Use the Command Line?
 The command line is a powerful tool for bioengineers and scientists for several reasons:
 1. **Automation**: You can write scripts to automate repetitive tasks, saving time and reducing errors.
-2. **Efficiency**: Many tasks can be performed faster via the command line than through a graphical user interface (GUI).
+2. **Efficiency**: Once you know it well, many tasks can be performed faster via the command line than through a graphical user interface (GUI).
 3. **Remote Access**: You can access and control remote servers or systems via the command line.
 4. **Version Control**: Command line tools like Git allow for efficient version control of code and documents.      
 5. **Data Processing**: Command line tools can handle large datasets and perform complex data manipulations efficiently.
 
-## Getting Started
-To get started with the command line, you need to open a terminal application. The terminal is a program that provides a command line interface.
-- On **Mac**, you can find the Terminal application in Applications > Utilities.        
-- On **Windows**, you can use Command Prompt or PowerShell, which can be found in the Start menu.
-- On **Linux**, you can usually find the terminal in the applications menu or by pressing `Ctrl + Alt + T`.
-
-## Basic Navigation
-To navigate the file system using the command line, you can use the following commands:
-- `pwd`: Print the current working directory.
-- `ls`: List the files and directories in the current directory.
-- `cd <directory>`: Change to the specified directory. For example, `cd Documents` will move you into the Documents directory.
-- `cd ..`: Move up one directory level.
-- `cd ~`: Move to your home directory.
-- `mkdir <directory>`: Create a new directory with the specified name.
-- `rmdir <directory>`: Remove an empty directory.
-- `rm <file>`: Remove a file. Use `rm -r <directory>` to remove a directory and its contents recursively.
-- `cp <source> <destination>`: Copy a file or directory from source to destination.
-- `mv <source> <destination>`: Move or rename a file or directory.  
+You might use the command line to:
+create an automated script that processes large biological datasets, run bioinformatics tools, run simulations of biological systems on remote servers, or manage source code for a project with git.
 
 ## Terminal Commands Cheat Sheet
 Command line commands can be used to navigate the file system, manipulate files, and run programs. Below is a cheat sheet of common commands.
@@ -65,4 +49,53 @@ Command line commands can be used to navigate the file system, manipulate files,
 | `clear` | Clear the terminal screen |
 | `exit` | Exit the terminal session |
 
+
+## Basic Navigation
+To navigate the file system using the command line, you can use the following commands:
+- `pwd`: Print the current working directory.
+- `ls`: List the files and directories in the current directory.
+- `cd <directory>`: Change to the specified directory. For example, `cd Documents` will move you into the Documents directory.
+- `cd ..`: Move up one directory level.
+- `cd ~`: Move to your home directory.
+
 ## Excercise 1
+
+Note: please type the commands rather than copy-pasting them, as this will help you learn the commands better.
+
+Whenever I start using the command line, I like to start by asking the following questions:
+1. "Where am I?"
+    To answer this question, you can use the `pwd` command, which stands for "Print Working Directory." This command will show you the current directory you are in.
+2. "What's in here?"
+    To answer this question, you can use the `ls` command, which stands for "List." This command will list all the files and directories in your current directory.
+
+The root of your computer is represented by a forward slash `/`. You can use `cd /` to navigate to the root directory of your computer. You will most likely see directories like `home`, `usr`, `bin`, etc. 
+
+This is the top-level directory of your file system, and you will not often need to navigate here directly. Your personal files are usually stored in a subdirectory of the root directory, such as `/home/yourusername` on Linux or Mac, or `C:\Users\yourusername` on Windows. 
+
+To navigate to your home directory, you can use the command `cd ~` or `cd /home/yourusername` (replace `yourusername` with your actual username).
+
+Next, use `cd` to change to your Desktop directory. You can do this by typing `cd Desktop` or `cd /Users/yourusername/Desktop` (replace `yourusername` with your actual username).
+
+Next, use `mkdir` to create a new directory called `bioengineer` in your Desktop directory. You can do this by typing `mkdir bioengineer`.
+
+Open this folder in your finder or file explorer so that you can see what it looks like. 
+Once you are back on the command line, use ls to confirm that the `bioengineer` directory was created successfully. Navigate into the `bioengineer` directory using `cd bioengineer`.
+
+Inside the `bioengineer` directory, create a new file called `bio.txt` using the `touch` command. You can do this by typing `touch bio.txt`.
+Create a second file called `bioengineer.txt` using the `touch` command. You can do this by typing `touch bioengineer.txt`.
+
+Now, use the `ls` command to confirm that the `bio.txt` and `bioengineer.txt` files were created successfully.
+You should see `bio.txt` and `bioengineer.txt` listed in the output of the `ls` command.
+You can also use the `ls -l` command to see more details about the files, such as their size and modification date.
+Also confirm the files were created by looking in the `bioengineer` directory in your finder or file explorer.
+
+Next, use the `cat` command to display the contents of the `bio.txt` file. Since it is currently empty, you will not see any output.
+Now, use the `echo` command to add some text to the `bio.txt` file. You can do this by typing `echo "Hello, Bioengineer!" > bio.txt`. This command will write the text "Hello, Bioengineer!" into the `bio.txt` file.
+Now, use the `cat` command again to display the contents of the `bio.txt` file. You should see the text "Hello, Bioengineer!" displayed in the terminal.
+
+Use the `rm` command to delete the `bio.txt` file. You can do this by typing `rm bio.txt`. Use the `ls` command again to confirm that the file has been deleted successfully.
+
+Then navigate back out of the `bioengineer` directory using `cd ..`. try running removing the `bioengineer` directory using the `rm` command. You will get an error message saying that the directory is not empty. This is because the directory contains the `bioengineer.txt` file.
+To remove the directory, you need to use the `rm -r` command, which stands
+for "remove recursively." This command will delete the directory and all of its contents. You can do this by typing `rm -r bioengineer`.
+Use the `ls` command again to confirm that the `bioengineer` directory has been deleted successfully.
