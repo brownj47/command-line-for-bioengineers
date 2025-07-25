@@ -43,7 +43,7 @@ Before starting this exercise, make sure you have the following tools installed:
     ```
     This indicates that you are in your home directory.
 
-> **Screenshot placeholder:** Terminal prompt example
+![Terminal prompt example](./exercise-1-images/empty-command-prompt.png)
 
 ## Orienting Yourself in the Command Line
 
@@ -65,7 +65,7 @@ ls
 
 The `ls` command stands for "List" and will display all the files and subdirectories in your current directory.
 
-> **Screenshot placeholder:** Output of `pwd` and `ls` commands
+![Terminal with pwd and ls commands](./exercise-1-images/pwd-ls.png)
 
 ## Computer File System Structure
 
@@ -91,16 +91,12 @@ The file system of your computer is organized in a hierarchical structure, simil
    
    You will most likely see directories like `home`, `usr`, `bin`, etc. The root directory is the top-level directory of your file system, and you will not often need to navigate here directly.
 
-> **Screenshot placeholder:** Root directory contents
-
 3. Navigate back to your home directory using `cd`:
    ```bash
    cd ~
    ```
    
    Alternatively, you could use `cd /home/yourusername` (replace `yourusername` with your actual username).
-
-> **Screenshot placeholder:** Home directory contents
 
 ## Creating and Managing Directories and Files
 
@@ -123,7 +119,7 @@ Now that you know how to navigate the file system, let's practice creating and m
    mkdir bioengineer
    ```
 
-> **Screenshot placeholder:** Bioengineer directory created on desktop
+![Bioengineer directory created on desktop](./exercise-1-images/mkdir.png)
 
 6. Use the `ls` command to confirm that the `bioengineer` directory was created successfully. You should see `bioengineer` listed in the output.
 
@@ -149,7 +145,7 @@ Now that you know how to navigate the file system, let's practice creating and m
     ls
     ```
 
-> **Screenshot placeholder:** Contents of bioengineer directory
+![Terminal output showing created files](./exercise-1-images/touch.png)
 
 11. You can also use the `ls -l` command to see more details about the files, such as their size and modification date:
     ```bash
