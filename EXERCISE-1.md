@@ -152,8 +152,6 @@ Now that you know how to navigate the file system, let's practice creating and m
     ls -l
     ```
 
-> **Screenshot placeholder:** Output of `ls -l` command
-
 12. **Verification step:** Check that the files were created by looking in the `bioengineer` directory using your file explorer/Finder.
 
 ### Viewing File Contents
@@ -167,7 +165,7 @@ Now that you know how to navigate the file system, let's practice creating and m
 
 14. Use the `echo` command to add some text to the `bio.txt` file:
     ```bash
-    echo "Welcome MAB Class of 2026!" > bio.txt
+    echo 'Welcome MAB Class of 2026!' > bio.txt
     ```
     
     This command will write the text "Welcome MAB Class of 2026!" into the `bio.txt` file.
@@ -179,7 +177,7 @@ Now that you know how to navigate the file system, let's practice creating and m
     
     You should see the text "Welcome MAB Class of 2026!" displayed in the terminal.
 
-> **Screenshot placeholder:** Output of `cat` command showing file contents
+![Terminal output showing file contents](./exercise-1-images/writing-to-file.png)
 
 ### Deleting Files and Directories
 
@@ -200,9 +198,9 @@ Now that you know how to navigate the file system, let's practice creating and m
     rm bioengineer
     ```
     
-    You will get an error message saying that the directory is not empty. This is because the directory contains the `bioengineer.txt` file.
+    You will get an error message becuase the `bioengineer` is a directory. 
 
-> **Screenshot placeholder:** Error message from attempting to remove non-empty directory
+![Terminal output showing rm command fail on directory](./exercise-1-images/rm-error.png)
 
 20. To remove the directory, you need to use the `rm -r` command, which stands for "remove recursively." This command will delete the directory and all of its contents:
     
@@ -212,11 +210,10 @@ Now that you know how to navigate the file system, let's practice creating and m
     rm -r bioengineer
     ```
 
+
 21. Use the `ls` command to confirm that the `bioengineer` directory has been deleted successfully. You should no longer see `bioengineer` listed in the output.
 
 22. **Verification step:** Confirm the directory was deleted by checking your file explorer/Finder. You should no longer see the `bioengineer` directory.
-
-> **Screenshot placeholder:** Desktop after directory deletion
 
 ## Summary
 
